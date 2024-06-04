@@ -1,0 +1,8 @@
+<template>
+  <ul>
+    <li repeat.for="nav of router.navigation" class="${nav.isActive ? 'active' : ''}"><a
+        href.bind="nav.href">${nav.title}</a></li>
+    <li><a href="vue">Vue</a></li>
+  </ul>
+  <router-view></router-view>
+</template>
